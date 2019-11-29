@@ -41,7 +41,8 @@ public class HamletParserTest {
         Assert.assertTrue(matcher.find());
 
         data = hamletParser.parseHamlet();
-        pattern = Pattern.compile("Hamlet");
+        System.out.println(data);
+        pattern = Pattern.compile("hamlet/i");
         matcher = pattern.matcher(data);
         Assert.assertFalse(matcher.find());
     }
@@ -54,7 +55,7 @@ public class HamletParserTest {
         Assert.assertTrue(matcher.find());
 
         data = hamletParser.parseHamlet();
-        pattern = Pattern.compile("Horatio");
+        pattern = Pattern.compile("horatio/i");
         matcher = pattern.matcher(data);
         Assert.assertFalse(matcher.find());
     }

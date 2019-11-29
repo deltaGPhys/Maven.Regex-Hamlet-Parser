@@ -21,6 +21,11 @@ public class HamletParser {
         Matcher matcher = pattern.matcher(data);
 
         data = matcher.replaceAll("Leon");
+
+        pattern = Pattern.compile("HAMLET");
+        matcher = pattern.matcher(data);
+
+        data = matcher.replaceAll("LEON");
         return data;
     }
 
@@ -29,6 +34,11 @@ public class HamletParser {
         Matcher matcher = pattern.matcher(data);
 
         data = matcher.replaceAll("Tariq");
+
+        pattern = Pattern.compile("HORATIO");
+        matcher = pattern.matcher(data);
+
+        data = matcher.replaceAll("TARIQ");
         return data;
     }
 
